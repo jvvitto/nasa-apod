@@ -11,7 +11,7 @@ API_NASA = "cculbllTfiO6PvRwefklymbBUAEyoqE22v1O4KdW"
 APOD_URL = "https://api.nasa.gov/planetary/apod"
 
 st.set_page_config(
-    page_title="NASA APOD Futurista",
+    page_title="NASA - Javi",
     page_icon="🚀",
     layout="wide"
 )
@@ -369,3 +369,4 @@ with col_main:
                     else:
                         st.video(fav["url"])
                     st.markdown("</div>", unsafe_allow_html=True)
+
