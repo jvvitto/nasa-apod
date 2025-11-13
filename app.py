@@ -16,6 +16,24 @@ st.set_page_config(
     layout="wide"
 )
 
+# Forzar modo oscuro del tema de Streamlit
+st.markdown("""
+    <style>
+    /* Fuerza el modo oscuro de Streamlit */
+    :root {
+        color-scheme: dark !important;
+    }
+    [data-theme="light"] {
+        color-scheme: dark !important;
+    }
+    [data-theme="light"] * {
+        background-color: transparent !important;
+        color: inherit !important;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+
 # -------------------------
 # ESTILOS FUTURISTAS
 # -------------------------
@@ -369,4 +387,5 @@ with col_main:
                     else:
                         st.video(fav["url"])
                     st.markdown("</div>", unsafe_allow_html=True)
+
 
