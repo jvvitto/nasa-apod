@@ -277,7 +277,7 @@ with col_main:
             st.warning("Este APOD es un video. Se mostrará el reproductor:")
             st.video(url)
 
-        st.markdown("### 🛰 Descripción oficial (NASA → español)")
+        st.markdown("### 🛰 Descripción oficial de la NASA")
         st.write(descripcion_es)
 
         col_b1, col_b2 = st.columns([1.2, 1.2])
@@ -387,5 +387,6 @@ with col_main:
                     else:
                         st.video(fav["url"])
                     st.markdown("</div>", unsafe_allow_html=True)
+
 
 
